@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  molecalc
+//  MoleCalc
 //
-//  Created by 田中 武則2 on 2013/11/22.
+//  Created by 田中 武則2 on 2013/10/10.
 //  Copyright (c) 2013年 takenori tanaka. All rights reserved.
 //
 
@@ -36,6 +36,9 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    self.gram_unit = @"g";
+    self.litter_unit = @"L";
+    self.mol_unit = @"M";
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

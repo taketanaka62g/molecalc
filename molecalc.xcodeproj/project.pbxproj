@@ -22,6 +22,13 @@
 		EC60D670183F7F7100752B3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC60D64F183F7F7100752B3D /* UIKit.framework */; };
 		EC60D678183F7F7100752B3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC60D676183F7F7100752B3D /* InfoPlist.strings */; };
 		EC60D67A183F7F7100752B3D /* molecalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC60D679183F7F7100752B3D /* molecalcTests.m */; };
+		EC981BC1183F813800451B47 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = EC981BBB183F813800451B47 /* iTunesArtwork */; };
+		EC981BC2183F813800451B47 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = EC981BBC183F813800451B47 /* iTunesArtwork@2x */; };
+		EC981BC3183F813800451B47 /* Molecule.m in Sources */ = {isa = PBXBuildFile; fileRef = EC981BBE183F813800451B47 /* Molecule.m */; };
+		EC981BC4183F813800451B47 /* UIViewController+UIViewControllerForIOS6.m in Sources */ = {isa = PBXBuildFile; fileRef = EC981BC0183F813800451B47 /* UIViewController+UIViewControllerForIOS6.m */; };
+		EC981BC6183F824700451B47 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC981BC5183F824700451B47 /* iAd.framework */; };
+		EC981BC9183F828200451B47 /* UnitSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC981BC8183F828200451B47 /* UnitSelectViewController.m */; };
+		EC981BCB183F82B300451B47 /* Molecule.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC981BCA183F82B300451B47 /* Molecule.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,16 @@
 		EC60D675183F7F7100752B3D /* molecalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "molecalcTests-Info.plist"; sourceTree = "<group>"; };
 		EC60D677183F7F7100752B3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC60D679183F7F7100752B3D /* molecalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = molecalcTests.m; sourceTree = "<group>"; };
+		EC981BBB183F813800451B47 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		EC981BBC183F813800451B47 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		EC981BBD183F813800451B47 /* Molecule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Molecule.h; sourceTree = "<group>"; };
+		EC981BBE183F813800451B47 /* Molecule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Molecule.m; sourceTree = "<group>"; };
+		EC981BBF183F813800451B47 /* UIViewController+UIViewControllerForIOS6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIViewControllerForIOS6.h"; sourceTree = "<group>"; };
+		EC981BC0183F813800451B47 /* UIViewController+UIViewControllerForIOS6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIViewControllerForIOS6.m"; sourceTree = "<group>"; };
+		EC981BC5183F824700451B47 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		EC981BC7183F828200451B47 /* UnitSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitSelectViewController.h; sourceTree = SOURCE_ROOT; };
+		EC981BC8183F828200451B47 /* UnitSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitSelectViewController.m; sourceTree = SOURCE_ROOT; };
+		EC981BCA183F82B300451B47 /* Molecule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Molecule.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC981BC6183F824700451B47 /* iAd.framework in Frameworks */,
 				EC60D64E183F7F7100752B3D /* CoreGraphics.framework in Frameworks */,
 				EC60D650183F7F7100752B3D /* UIKit.framework in Frameworks */,
 				EC60D64C183F7F7100752B3D /* Foundation.framework in Frameworks */,
@@ -104,6 +122,7 @@
 		EC60D64A183F7F7100752B3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC981BC5183F824700451B47 /* iAd.framework */,
 				EC60D64B183F7F7100752B3D /* Foundation.framework */,
 				EC60D64D183F7F7100752B3D /* CoreGraphics.framework */,
 				EC60D64F183F7F7100752B3D /* UIKit.framework */,
@@ -115,6 +134,15 @@
 		EC60D651183F7F7100752B3D /* molecalc */ = {
 			isa = PBXGroup;
 			children = (
+				EC981BCA183F82B300451B47 /* Molecule.plist */,
+				EC981BC7183F828200451B47 /* UnitSelectViewController.h */,
+				EC981BC8183F828200451B47 /* UnitSelectViewController.m */,
+				EC981BBB183F813800451B47 /* iTunesArtwork */,
+				EC981BBC183F813800451B47 /* iTunesArtwork@2x */,
+				EC981BBD183F813800451B47 /* Molecule.h */,
+				EC981BBE183F813800451B47 /* Molecule.m */,
+				EC981BBF183F813800451B47 /* UIViewController+UIViewControllerForIOS6.h */,
+				EC981BC0183F813800451B47 /* UIViewController+UIViewControllerForIOS6.m */,
 				EC60D65A183F7F7100752B3D /* AppDelegate.h */,
 				EC60D65B183F7F7100752B3D /* AppDelegate.m */,
 				EC60D65D183F7F7100752B3D /* Main.storyboard */,
@@ -204,6 +232,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "takenori tanaka";
 				TargetAttributes = {
+					EC60D647183F7F7100752B3D = {
+						DevelopmentTeam = BP8S75KQXU;
+					};
 					EC60D66B183F7F7100752B3D = {
 						TestTargetID = EC60D647183F7F7100752B3D;
 					};
@@ -233,9 +264,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC981BCB183F82B300451B47 /* Molecule.plist in Resources */,
+				EC981BC2183F813800451B47 /* iTunesArtwork@2x in Resources */,
 				EC60D667183F7F7100752B3D /* Images.xcassets in Resources */,
 				EC60D656183F7F7100752B3D /* InfoPlist.strings in Resources */,
 				EC60D65F183F7F7100752B3D /* Main.storyboard in Resources */,
+				EC981BC1183F813800451B47 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC981BC4183F813800451B47 /* UIViewController+UIViewControllerForIOS6.m in Sources */,
+				EC981BC3183F813800451B47 /* Molecule.m in Sources */,
 				EC60D665183F7F7100752B3D /* SecondViewController.m in Sources */,
 				EC60D65C183F7F7100752B3D /* AppDelegate.m in Sources */,
+				EC981BC9183F828200451B47 /* UnitSelectViewController.m in Sources */,
 				EC60D662183F7F7100752B3D /* FirstViewController.m in Sources */,
 				EC60D658183F7F7100752B3D /* main.m in Sources */,
 			);
@@ -384,9 +421,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "molecalc/molecalc-Prefix.pch";
 				INFOPLIST_FILE = "molecalc/molecalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,9 +436,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "molecalc/molecalc-Prefix.pch";
 				INFOPLIST_FILE = "molecalc/molecalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -466,6 +508,7 @@
 				EC60D67F183F7F7100752B3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC60D680183F7F7100752B3D /* Build configuration list for PBXNativeTarget "molecalcTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +517,7 @@
 				EC60D682183F7F7100752B3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
