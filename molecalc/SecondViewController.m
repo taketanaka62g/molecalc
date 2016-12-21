@@ -14,13 +14,13 @@
 @end
 
 @implementation SecondViewController
-Molecule *molecure;
+Molecule *molecure_2;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    molecure = [Molecule alloc];
+    molecure_2 = [Molecule alloc];
     self.contentText.delegate = self;
     self.molecureText.delegate = self;
     self.balkText.delegate = self;
@@ -156,7 +156,12 @@ Molecule *molecure;
     {
         m = 1000;
     }
-    [molecure setUnitValues:g andLitter:l andMol:m];
+    [molecure_2 setUnitValues:g andLitter:l andMol:m];
+}
+// 分子量の入力終了イベントで値をAppDelegateに入れておく
+- (IBAction)molecureEditEnd:(UITextField *)sender {
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    appDelegate.moleText = self.molecureText.text;
 }
 
 - (IBAction)calcContent:(UIButton *)sender {
@@ -167,7 +172,7 @@ Molecule *molecure;
     if (mol.length > 0) {
         [self parseUnits];  // 単位セット
         // 計算実行
-        value = [molecure calcContent:mol andBalk:balk andConcentration:concentration];
+        value = [molecure_2 calcContent:mol andBalk:balk andConcentration:concentration];
     }
     self.contentText.text = [NSString stringWithFormat:@"%.2f",value];
 }
@@ -179,7 +184,7 @@ Molecule *molecure;
     if (mol.length > 0) {
         [self parseUnits]; // 単位セット
         // 計算実行
-        value = [molecure calcBalk:content andMolecure:mol andConcentration:concentration];
+        value = [molecure_2 calcBalk:content andMolecure:mol andConcentration:concentration];
     }
     self.balkText.text = [NSString stringWithFormat:@"%.2f",value];
 }
@@ -191,7 +196,7 @@ Molecule *molecure;
     if (mol.length > 0) {
         [self parseUnits]; // 単位セット
         // 計算実行
-        value = [molecure calcConcentration:content andMolecure:mol andBalk:balk];
+        value = [molecure_2 calcConcentration:content andMolecure:mol andBalk:balk];
     }
     self.concentrationText.text = [NSString stringWithFormat:@"%.2f",value];
 }

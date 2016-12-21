@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <iAd/iAd.h>
 #import "Molecule.h"
 #import "UIViewController+UIViewControllerForIOS6.h"
 
 @interface FirstViewController : UIViewController
-<UIPickerViewDelegate,UITextFieldDelegate,UIScrollViewDelegate,ADBannerViewDelegate> {
+<UIPickerViewDelegate,UITextFieldDelegate,UIScrollViewDelegate> {
     IBOutlet UIScrollView *scrollView;    //今回はスクロールビューにテキストフィールドを載せているので
     UITextField *activeField;    //選択されたテキストフィールドを入れる
 }
@@ -25,8 +24,8 @@
 - (IBAction)calcExecute:(UIButton *)sender;
 - (IBAction)clearExpression:(UIButton *)sender;
 - (void)closeKeyboard:(id)sender;
-@property (weak, nonatomic) IBOutlet ADBannerView *bannerView;
 
 @property (weak, nonatomic) IBOutlet UIView *contentsView;
+@property (weak, nonatomic) IBOutlet UILabel *japaneseLabel;
 
 @end
